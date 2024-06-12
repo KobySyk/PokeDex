@@ -6,10 +6,24 @@ import PokemonCard from './components/PokemonCard'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const pokemonList = [
+   {
+   name: "Lugia",
+   imgSrc:
+   "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/249.png",
+   },
+   {
+   name: "Ramboum",
+   },
+   {
+   name: "Groudon",
+   imgSrc:"https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/383.png"
+    
+   }
+  ];
   return (
     <>
-      <PokemonCard/>
+      <PokemonCard myPokemon={pokemonList[0]} />
     </>
   )
 }
